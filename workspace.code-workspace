@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "simple-http-server"
+		},
+		{
+			"path": "movies-crud-api"
 		}
 	]
 }
