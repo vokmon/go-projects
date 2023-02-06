@@ -1,0 +1,11 @@
+go mod init book-store-api
+
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/postgres
+
+go get -u github.com/gorilla/mux
+
+go run cmd/main/main.go
+
+Database
+https://api.elephantsql.com/console/31863630-de44-4053-8c5d-ed19cf3e5c40/details
