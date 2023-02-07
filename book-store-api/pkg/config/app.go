@@ -1,6 +1,8 @@
 package config
 
 import (
+	"os"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -10,7 +12,7 @@ var (
 )
 
 func Connect() {
-	dsn := "host=john.db.elephantsql.com user=onzcdmyh password=Fz80RSWhh9iwZAU_CZmsdNOBE1_exq2d dbname=onzcdmyh port=5432 sslmode=disable"
+	dsn := os.Getenv("DB_URL")
 	d, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)
