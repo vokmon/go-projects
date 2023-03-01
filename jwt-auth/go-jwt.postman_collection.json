@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "0aa9bf05-2788-4ae1-9b93-f27a5a707385",
+		"name": "go-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14829715"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"First_name\": \"View\",\n    \"Last_name\" : \"ViewLastName\",\n    \"Password\" : \"123456789\",\n    \"Email\": \"view@acb.com\",\n    \"Phone\": \"1234567898\",\n    \"User_type\": \"ADMIN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Email\" : \"view@acb.com\",\n    \"Password\" : \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test api 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/v1/api-1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"api-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InZpZXdAYWNiLmNvbSIsIkZpcnN0X25hbWUiOiJWaWV3IiwiTGFzdF9uYW1lIjoiVmlld0xhc3ROYW1lIiwiVWlkIjoiNjNmZjRkNTM5MTgzZGUxZDUxNzZhMzBjIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2Nzc3NjIyNjZ9.D1yCqIrk3LAFxxTBIMwsgfczv4OQ7aqRpRgVsOJuGHo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All user by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InZpZXdAYWNiLmNvbSIsIkZpcnN0X25hbWUiOiJWaWV3IiwiTGFzdF9uYW1lIjoiVmlld0xhc3ROYW1lIiwiVWlkIjoiNjNmZjRkNTM5MTgzZGUxZDUxNzZhMzBjIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2Nzc3NjIyNjZ9.D1yCqIrk3LAFxxTBIMwsgfczv4OQ7aqRpRgVsOJuGHo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/users/63ff4d539183de1d5176a30c",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"63ff4d539183de1d5176a30c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

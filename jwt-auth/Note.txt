@@ -1,0 +1,26 @@
+https://www.youtube.com/watch?v=Cr3BiwGN2Tg&t=1835s
+
+
+Mongodb
+https://cloud.mongodb.com/
+
+gojwtauth
+ZYwA91qghL9riPUe
+
+https://github.com/githubnemo/CompileDaemon -> watch the file changes
+go get github.com/githubnemo/CompileDaemon
+go install github.com/githubnemo/CompileDaemon
+
+go.mongodb.org/mongo-driver/mongo
+go get go.mongodb.org/mongo-driver/bson/primitive
+go get github.com/gin-gonic/gin
+go get github.com/joho/godotenv
+go get github.com/dgrijalva/jwt-go
+
+https://pkg.go.dev/github.com/go-playground/validator/v10#readme-usage-and-documentation
+
+Run
+~/go/bin/CompileDaemon -command="./go-crud-api"
+
+go run main.go
+go mod tidy
